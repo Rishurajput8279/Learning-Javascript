@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishu</title>
+</head>
+<body>
+    <h1>Rishu and Ayush</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // const sayRishu= ()=>{
+    //     console.log("HELLO");
+    // }
+
+    const changeText=function(){
+        document.querySelector('h1').innerHTML="Best Rishu";
+    }
+
+    const changeMe=setTimeout(changeText,5000);
+    document.querySelector("button").addEventListener('click',()=>{
+        clearTimeout(changeMe);
+        console.log("Stop");
+        
+    });
+    
+
+</script>
+</html>
