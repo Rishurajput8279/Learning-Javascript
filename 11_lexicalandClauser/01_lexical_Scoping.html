@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Closure aur chai</title>
+</head>
+
+<body style="background-color: #313131; color: aliceblue;">
+
+</body>
+<script>
+  // function init() {
+  //   let name = "Mozilla";
+  //   function displayName() {
+  //     console.log(name);
+  //   }
+  //   displayName();
+  // }
+  // init();
+
+  function outer(){
+    let userName="Rishu";
+    function inner(){
+      let secert= "my123";
+      console.log("Inner :",userName)
+    }
+    function inner2(){
+      console.log("Innner 2:",userName)
+      // console.log("secert :",secert)
+    }
+    inner();
+    inner2();
+  }
+  outer();
+  console.log("To Outer :",userName);
+
+</script>
+
+</html>
+
